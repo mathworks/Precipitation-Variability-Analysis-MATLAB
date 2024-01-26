@@ -1,92 +1,106 @@
-# Open-Precipitation-Data-MATLAB
+**Analyzing and Visualizing Open Precipitation Web Data ®**
 
+A MATLAB® Live Script with accompanying
 
+-   [Jupyter®
+    Notebook](https://insidelabs-git.mathworks.com/ww-edu-technical/coursework/Open-Precipitation-Data-MATLAB/-/blob/main/Analyzing_and_Visualizing_Open_Precipitation_Web_Data.ipynb?ref_type=heads),
 
-## Getting started
+-   [.m
+    file](https://insidelabs-git.mathworks.com/ww-edu-technical/coursework/Open-Precipitation-Data-MATLAB/-/blob/main/Analyzing_and_Visualizing_Open_Precipitation_Web_Data_Script.m?ref_type=heads)
+    and
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+-   [reproducible code capsule on Code Ocean®]{.underline}
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+to access, process and visualize global climate (precipitation) data
+from the WCRP CMIP6 (World Climate Research Programme Coupled
+Intercomparison Project - Phase 6) database.
 
-## Add your files
+**Get started**
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+-   No downloads, no installations
 
-```
-cd existing_repo
-git remote add origin https://insidelabs-git.mathworks.com/ww-edu-technical/coursework/Open-Precipitation-Data-MATLAB.git
-git branch -M main
-git push -uf origin main
-```
+-   **Open directly in MATLAB Online**
 
-## Integrate with your tools
+-   Step-by-step tutorial shows how to
 
-- [ ] [Set up project integrations](https://insidelabs-git.mathworks.com/ww-edu-technical/coursework/Open-Precipitation-Data-MATLAB/-/settings/integrations)
+    -   Re-use available climate data. **Access a list of openly
+        available sources** such as NASA, ECMWF, CMCC
 
-## Collaborate with your team
+    -   **Query and inspect the metadata** associated with these
+        projects using commands directly from MATLAB (RESTful API)
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+    -   Avoid downloads. **Access specific data** from within the
+        database directly and **avoid time-consuming downloads** of
+        large data
 
-## Test and Deploy
+    -   **Read NetCDF (\*.nc) data** from within MATLAB corresponding to
+        specific geospatial parameters (e.g., temperature, precipitation
+        flux, sea ice thickness, etc.)
 
-Use the built-in continuous integration in GitLab.
+    -   **Filter, analyze and visualize climate data** using standard
+        MATLAB functions, mapping projections, graphical tools and
+        statistical methods.
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+    -   Let others run your code and reproduce your results quickly.
+        **Publish the results on GitHub** and **make them accessible**
+        using *"Open With MATLAB Online"*
 
-***
+    -   Allow people to cite you! **Generate a DOI** for your code by
+        linking your GitHub repository to one of several DOI-generating
+        sites.
 
-# Editing this README
+-   **Live Script** contains **easy-to-use menus** and **interactive
+    tools**
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+-   Available on [**[File
+    Exchange]{.underline}**](https://www.mathworks.com/matlabcentral/fileexchange/)
+    for directly installing onto your MATLAB path with one click using
+    the [[Add-Ons
+    button]{.underline}](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html)
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+-   Accompanying **Jupyter notebook** (.ipynb) for use in a Jupyter
+    environment. More information on MATLAB kernel
+    [[here]{.underline}](https://www.mathworks.com/products/reference-architectures/jupyter.html)
 
-## Name
-Choose a self-explaining name for your project.
+-   Accompanying **Code Ocean reproducible capsule** (.m) for one-click
+    reproducibility of the code by anyone, including reviewers.
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+**About the WCRP-CMIP6 Database**
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+The [Coupled Model Intercomparison
+Project](https://www.wcrp-climate.org/wgcm-cmip), began in 1995 under
+the auspices of the [World Climate Research Programme
+(WCRP)](https://www.wcrp-climate.org/about-wcrp/wcrp-overview). By 2024
+it is in its sixth phase (CMIP6). CMIP6 coordinates independent [model
+intercomparison activities and their
+experiments](https://rawgit.com/WCRP-CMIP/CMIP6_CVs/master/src/CMIP6_experiment_id.html) which
+have adopted a common infrastructure for collecting, organizing, and
+distributing output from models performing common sets of experiments.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+The [Earth System Grid Federation](http://esgf.llnl.gov/) (ESGF)
+maintains a global system of federated data centers that allow access to
+the largest archive of model climate data world-wide. This portal
+(<https://esgf-data.dkrz.de/search/cmip6-dkrz/>), hosted by the [[German
+Climate Computing
+Centre]{.underline}](https://www.dkrz.de/?set_language=en&cl=en) (DKRZ),
+is an interface for users to access model data that are distributed in
+several data centers, also called data nodes. Such portals provide
+access to the output of the climate models contributing to the next
+assessment report of the Intergovernmental Panel on Climate
+Change [[IPCC]{.underline}](http://www.ipcc.ch/).
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+**Required Products**
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+This tutorial uses the following products:
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+-   MATLAB®
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+-   Mapping Toolbox™
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+-   Statistics and Machine Learning Toolbox™
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+This code has been developed and tested using MATLAB 2023b
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+**Note** This tutorial works best when delivered by a tutor. It is
+important to highlight best practices when working with Open Data,
+publishing Open Code or making research output reproducible.
