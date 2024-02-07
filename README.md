@@ -9,7 +9,7 @@ A MATLAB® Live Script with accompanying
     file](https://insidelabs-git.mathworks.com/ww-edu-technical/coursework/Open-Precipitation-Data-MATLAB/-/blob/main/Analyzing_and_Visualizing_Open_Precipitation_Web_Data_Script.m?ref_type=heads)
     and
 
--   [reproducible code capsule on Code Ocean®]{.underline}
+-   [reproducible code capsule on Code Ocean®]
 
 to access, process and visualize global climate (precipitation) data
 from the WCRP CMIP6 (World Climate Research Programme Coupled
@@ -53,14 +53,14 @@ Intercomparison Project - Phase 6) database.
     tools**
 
 -   Available on [**[File
-    Exchange]{.underline}**](https://www.mathworks.com/matlabcentral/fileexchange/)
+    Exchange]**](https://www.mathworks.com/matlabcentral/fileexchange/)
     for directly installing onto your MATLAB path with one click using
     the [[Add-Ons
-    button]{.underline}](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html)
+    button]](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html)
 
 -   Accompanying **Jupyter notebook** (.ipynb) for use in a Jupyter
     environment. More information on MATLAB kernel
-    [[here]{.underline}](https://www.mathworks.com/products/reference-architectures/jupyter.html)
+    [[here]](https://www.mathworks.com/products/reference-architectures/jupyter.html)
 
 -   Accompanying **Code Ocean reproducible capsule** (.m) for one-click
     reproducibility of the code by anyone, including reviewers.
@@ -82,12 +82,12 @@ maintains a global system of federated data centers that allow access to
 the largest archive of model climate data world-wide. This portal
 (<https://esgf-data.dkrz.de/search/cmip6-dkrz/>), hosted by the [[German
 Climate Computing
-Centre]{.underline}](https://www.dkrz.de/?set_language=en&cl=en) (DKRZ),
+Centre]](https://www.dkrz.de/?set_language=en&cl=en) (DKRZ),
 is an interface for users to access model data that are distributed in
 several data centers, also called data nodes. Such portals provide
 access to the output of the climate models contributing to the next
 assessment report of the Intergovernmental Panel on Climate
-Change [[IPCC]{.underline}](http://www.ipcc.ch/).
+Change [[IPCC]](http://www.ipcc.ch/).
 
 **Required Products**
 
