@@ -1,4 +1,4 @@
-%% Analyzing and Visualizing Open Precipitation Web Data
+%% Analyzing and Visualizing Open Precipitation Data
 % Authors: Kostas Leptokaropoulos and Shubo Chakrabarti
 % 
 % _Copyright 2024 - 2024 The MathWorks, Inc._  
