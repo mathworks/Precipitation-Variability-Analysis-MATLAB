@@ -1,4 +1,4 @@
-**Analyzing and Visualizing Open Precipitation Web Data ®**
+**Analyzing and Visualizing Open Precipitation Web Data in MATLAB®**
 
 A MATLAB® Live Script with accompanying
 
