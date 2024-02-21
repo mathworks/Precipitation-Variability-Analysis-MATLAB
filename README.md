@@ -21,7 +21,7 @@ Intercomparison Project - Phase 6) database.
 
 -   No downloads, no installations
 
--   **Open directly in MATLAB Online**
+-   **Open directly in [MATLAB Online](https://uk.mathworks.com/products/matlab-online.html)**
 
 -   Step-by-step tutorial shows how to
 
@@ -51,7 +51,7 @@ Intercomparison Project - Phase 6) database.
         linking your GitHub repository to one of several DOI-generating
         sites.
 
--   **Live Script** contains **easy-to-use menus** and **interactive
+-   **[Live Script](https://uk.mathworks.com/products/matlab/live-editor.html)** contains **easy-to-use menus** and **interactive
     tools**
 
 -   Available on [**[File
@@ -97,9 +97,9 @@ This tutorial uses the following products:
 
 -   MATLAB®
 
--   Mapping Toolbox™
+-   [Mapping Toolbox™](https://www.mathworks.com/help/map/index.html)
 
--   Statistics and Machine Learning Toolbox™
+-   [Statistics and Machine Learning Toolbox™](https://www.mathworks.com/help/stats/)
 
 This code has been developed and tested using MATLAB 2023b
 
