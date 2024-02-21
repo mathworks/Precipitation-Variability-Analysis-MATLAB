@@ -1,5 +1,6 @@
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=mathworks/Precipitation-Variability-Analysis-MATLAB&file=Analyzing_and_Visualizing_Open_Precipitation_Data.mlx)
-**Analyzing and Visualizing Open Precipitation Data in MATLAB®**
+
+# Analyzing and Visualizing Open Precipitation Data in MATLAB®
 
 A MATLAB® Live Script with accompanying
 
