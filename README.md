@@ -60,7 +60,7 @@ Intercomparison Project - Phase 6) database.
     the [[Add-Ons
     button]](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html)
 
--   Accompanying **Jupyter notebook** (.ipynb) for use in a Jupyter
+-   Accompanying [**Jupyter notebook** (.ipynb)](https://github.com/mathworks/Precipitation-Variability-Analysis-MATLAB/blob/main/Analyzing_and_Visualizing_Open_Precipitation_Data.ipynb) for use in a Jupyter
     environment. More information on MATLAB kernel
     [[here]](https://www.mathworks.com/products/reference-architectures/jupyter.html)
 
