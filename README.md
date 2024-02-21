@@ -35,9 +35,9 @@ Intercomparison Project - Phase 6) database.
         database directly and **avoid time-consuming downloads** of
         large data
 
-    -   **Read NetCDF (\*.nc) data** from within MATLAB corresponding to
+    -   **[Read NetCDF](https://uk.mathworks.com/help/matlab/network-common-data-form.html) (\*.nc) data** from within MATLAB corresponding to
         specific geospatial parameters (e.g., temperature, precipitation
-        flux, sea ice thickness, etc.)
+        flux, sea ice thickness, etc.) 
 
     -   **Filter, analyze and visualize climate data** using standard
         MATLAB functions, mapping projections, graphical tools and
