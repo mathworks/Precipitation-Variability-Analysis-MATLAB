@@ -95,7 +95,7 @@ Change [[IPCC]](http://www.ipcc.ch/).
 
 This tutorial uses the following products:
 
--   MATLAB®
+-   [MATLAB®](https://www.mathworks.com/products/matlab.html)
 
 -   [Mapping Toolbox™](https://www.mathworks.com/help/map/index.html)
 
