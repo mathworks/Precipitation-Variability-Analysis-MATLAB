@@ -3,10 +3,10 @@
 A MATLAB® Live Script with accompanying
 
 -   [Jupyter®
-    Notebook](https://insidelabs-git.mathworks.com/ww-edu-technical/coursework/Open-Precipitation-Data-MATLAB/-/blob/main/Analyzing_and_Visualizing_Open_Precipitation_Web_Data.ipynb?ref_type=heads),
+    Notebook](https://github.com/mathworks/Precipitation-Variability-Analysis-MATLAB/blob/main/Analyzing_and_Visualizing_Open_Precipitation_Data.ipynb),
 
 -   [.m
-    file](https://insidelabs-git.mathworks.com/ww-edu-technical/coursework/Open-Precipitation-Data-MATLAB/-/blob/main/Analyzing_and_Visualizing_Open_Precipitation_Web_Data_Script.m?ref_type=heads)
+    file](https://github.com/mathworks/Precipitation-Variability-Analysis-MATLAB/blob/main/Analyzing_and_Visualizing_Open_Precipitation_Data_Script.m)
     and
 
 -   [reproducible code capsule on Code Ocean®]
