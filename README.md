@@ -11,7 +11,7 @@ A MATLAB® Live Script with accompanying
     file](https://github.com/mathworks/Precipitation-Variability-Analysis-MATLAB/blob/main/Analyzing_and_Visualizing_Open_Precipitation_Data_Script.m)
     and
 
--   [reproducible code capsule on Code Ocean®]
+-   reproducible code [capsule on Code Ocean®](https://codeocean.com/capsule/0990523/tree/v1) with doi: 10.24433/CO.2048052.v1
 
 to access, process and visualize global climate (precipitation) data
 from the WCRP CMIP6 (World Climate Research Programme Coupled
