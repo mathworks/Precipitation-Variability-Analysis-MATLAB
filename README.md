@@ -73,9 +73,9 @@ The [Coupled Model Intercomparison
 Project](https://www.wcrp-climate.org/wgcm-cmip), began in 1995 under
 the auspices of the [World Climate Research Programme
 (WCRP)](https://www.wcrp-climate.org/about-wcrp/wcrp-overview). By 2024
-it is in its sixth phase (CMIP6). CMIP6 coordinates independent [model
+it is in its sixth phase (CMIP6). CMIP6 coordinates independent model
 intercomparison activities and their
-experiments](https://rawgit.com/WCRP-CMIP/CMIP6_CVs/master/src/CMIP6_experiment_id.html) which
+experiments which
 have adopted a common infrastructure for collecting, organizing, and
 distributing output from models performing common sets of experiments.
 
