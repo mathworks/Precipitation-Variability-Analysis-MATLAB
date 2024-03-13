@@ -54,8 +54,8 @@ Intercomparison Project - Phase 6) database.
 -   **[Live Script](https://uk.mathworks.com/products/matlab/live-editor.html)** contains **easy-to-use menus** and **interactive
     tools**
 
--   Available on [**[File
-    Exchange]**](https://www.mathworks.com/matlabcentral/fileexchange/)
+-   Available on [**File
+    Exchange**](https://www.mathworks.com/matlabcentral/fileexchange/)
     for directly installing onto your MATLAB path with one click using
     the [[Add-Ons
     button]](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html)
@@ -82,14 +82,14 @@ distributing output from models performing common sets of experiments.
 The [Earth System Grid Federation](http://esgf.llnl.gov/) (ESGF)
 maintains a global system of federated data centers that allow access to
 the largest archive of model climate data world-wide. This portal
-(<https://esgf-data.dkrz.de/search/cmip6-dkrz/>), hosted by the [[German
+(<https://esgf-data.dkrz.de/search/cmip6-dkrz/>), hosted by the [German
 Climate Computing
-Centre]](https://www.dkrz.de/?set_language=en&cl=en) (DKRZ),
+Centre](https://www.dkrz.de/?set_language=en&cl=en) (DKRZ),
 is an interface for users to access model data that are distributed in
 several data centers, also called data nodes. Such portals provide
 access to the output of the climate models contributing to the next
 assessment report of the Intergovernmental Panel on Climate
-Change [[IPCC]](http://www.ipcc.ch/).
+Change [IPCC](http://www.ipcc.ch/).
 
 **Required Products**
 
