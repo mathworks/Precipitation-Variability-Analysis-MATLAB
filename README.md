@@ -57,12 +57,12 @@ Intercomparison Project - Phase 6) database.
 -   Available on [**File
     Exchange**](https://www.mathworks.com/matlabcentral/fileexchange/)
     for directly installing onto your MATLAB path with one click using
-    the [[Add-Ons
-    button]](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html)
+    the [Add-Ons
+    button](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html)
 
 -   Accompanying [**Jupyter notebook** (.ipynb)](https://github.com/mathworks/Precipitation-Variability-Analysis-MATLAB/blob/main/Analyzing_and_Visualizing_Open_Precipitation_Data.ipynb) for use in a Jupyter
     environment. More information on MATLAB kernel
-    [[here]](https://www.mathworks.com/products/reference-architectures/jupyter.html)
+    [here](https://www.mathworks.com/products/reference-architectures/jupyter.html)
 
 -   Accompanying [**Code Ocean reproducible capsule**](https://codeocean.com/capsule/0990523/tree/v1) for one-click
     reproducibility of the code by anyone, including reviewers.
