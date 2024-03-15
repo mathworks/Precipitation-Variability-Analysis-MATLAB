@@ -56,7 +56,7 @@ Intercomparison Project - Phase 6) database.
     tools**
 
 -   Available on [**File
-    Exchange**](https://www.mathworks.com/matlabcentral/fileexchange/)
+    Exchange**](https://uk.mathworks.com/matlabcentral/fileexchange/160986-precipitation-variability-analysis-matlab)
     for directly installing onto your MATLAB path with one click using
     the [Add-Ons
     button](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html)
