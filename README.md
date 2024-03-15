@@ -22,7 +22,7 @@ Intercomparison Project - Phase 6) database.
 
 -   No downloads, no installations
 
--   **Open directly in [MATLAB Online](https://uk.mathworks.com/products/matlab-online.html)**
+-   **Open directly in [MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=mathworks/Precipitation-Variability-Analysis-MATLAB&file=Analyzing_and_Visualizing_Open_Precipitation_Data.mlx)**
 
 -   Step-by-step tutorial shows how to
 
