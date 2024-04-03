@@ -45,15 +45,15 @@
 % Programme Coupled Intercomparison Project - Phase 6), which are located at: 
 % <https://esgf-data.dkrz.de/search/cmip6-dkrz *https://esgf-data.dkrz.de/search/cmip6-dkrz/*.>
 % 
-% The dataspace is hosted by the <https://www.dkrz.de/en German Climate Computer 
+% The Data Space is hosted by the <https://www.dkrz.de/en German Climate Computer 
 % Center> (DKRZ) and the <https://is.enes.org/ Infrastructure for the European 
 % Network for Earth System Modelling> (IS-ENES), as a part of the global <https://esgf.llnl.gov/ 
 % Earth System Grid Federation> (ESGF).  
 % 
 % The user can apply multiple filters and preferences for a large variety of 
 % climate parameters, such as see ice thickness, air pressure, phytoplankton mass 
-% concentation, etc, provided by different sources. In our example we used the 
-% ffollowing filtering:
+% concentration, etc, provided by different sources. In our example we used the 
+% following filtering:
 %% 
 % * CF Standard name: precipitation flux
 % * Frequency: day
@@ -95,7 +95,7 @@
 
 clearvars; clc; close all
 %% 
-% You can read any 2 datasets from the example links indicated above, one imported 
+% You can read any 2 data sets from the example links indicated above, one imported 
 % as "URLpast" and a subsequent one as "URLproj".
 % 
 % There are a bunch of <https://uk.mathworks.com/help/matlab/network-common-data-form.html 
@@ -112,12 +112,12 @@ ncdisp(URLpast)
 ncdisp(URLproj)
 Variable = "pr"; 
 %% Read and filter Geospatial Data
-% read londitude and latitude from the .nc file
+% read longitude and latitude from the .nc file
 
 lon = double(ncread(URLpast,'lon')); 
 lat = double(ncread(URLpast,'lat')); 
 % Filter Data in Time and Space
-% Select boundaries of a rectangual area
+% Select boundaries of a rectangular area
 
 %minimum and maximum longitude
 minlon = 25;maxlon = 40; % set values from 0 to 360
@@ -189,7 +189,7 @@ MV = max([max(Var1past(:)),max(Var1proj(:))])
   CBmin = -9.00419266706534e-16;
   CBmax = 51.43537279218435;
 %% Visualize and compare past and projected data
-% Greate a 2 frame figure. Plot the past data in the left frame and the projected 
+% Create a 2 frame figure. Plot the past data in the left frame and the projected 
 % data in the right frame. Add the coastlines in both figures. The text displayed 
 % in the figure (title, colorbar) is also directly imported from the .nc file 
 % metadata and the parameter values we have set.
@@ -215,9 +215,9 @@ title([ncreadatt(URLproj,Variable,'long_name'),'on',Tproj_str(inx)])
  colormap turbo
 
 %% Some Stats!
-% In this section a comparison is perfomed between the past and projected data. 
+% In this section a comparison is performed between the past and projected data. 
 %% 
-% * First, the precipitation time series (daily, solid lines; cummulative, dashed 
+% * First, the precipitation time series (daily, solid lines; cumulative, dashed 
 % lines) are plotted in the same plot for direct comparison.
 % * Then, <https://uk.mathworks.com/help/matlab/ref/boxchart.html box charts> 
 % are generated to show the daily sum average precipitation values distribution 
@@ -253,7 +253,7 @@ T2 = Tpast_str(190);inx2 = Tpast_str == T2;n2 = find(inx2);
 n = n2 - n1 +1;
 if n2<=n1;error('End date (n2) should be greater than start date (n1)');end
 
-% Generate Daily/Cummulative Plots and Box Charts
+% Generate Daily/Cumulative Plots and Box Charts
 
 Boxp1 = zeros(size(n,1));Boxp2 = zeros(size(n,1));cou=1;
 for i=n1:n2
@@ -263,7 +263,7 @@ cou=cou+1;
 end
 
 %% 
-% Daily and Cummulative plots 
+% Daily and Cumulative plots 
 
 figure
 plot(Tpast(n1:n2),Boxp1,'r-',Tpast(n1:n2),Boxp2,'k-',LineWidth=1);datetick('x',6);ylabel('daily sum');xlabel('date');
@@ -304,7 +304,7 @@ end
 %% 
 % * Publish your MATLAB code (eg: on GitHub) and generate a <https://en.wikipedia.org/wiki/Digital_object_identifier 
 % DOI> (digital object identifier) by <https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content 
-% linking it to a DOI generating portal> (egs. <https://help.figshare.com/article/how-to-connect-figshare-with-your-github-account#:~:text=You%20can%20get%20set%20up,where%20you'll%20authorise%20figshare. 
+% linking it to a DOI generating portal> (e.g. <https://help.figshare.com/article/how-to-connect-figshare-with-your-github-account#:~:text=You%20can%20get%20set%20up,where%20you'll%20authorise%20figshare. 
 % Figshare>®, <https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content 
 % Zenodo>®). Make your research output findable by including as much information 
 % as needed in the metadata. Document your code well explaining steps required 
