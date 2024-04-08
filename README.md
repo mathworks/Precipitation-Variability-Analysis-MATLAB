@@ -6,10 +6,10 @@
 A MATLAB® Live Script with accompanying
 
 -   [Jupyter®
-    Notebook](https://github.com/mathworks/Precipitation-Variability-Analysis-MATLAB/blob/main/Analyzing_and_Visualizing_Open_Precipitation_Data.ipynb),
+    Notebook](https://github.com/mathworks/Precipitation-Variability-Analysis-MATLAB/blob/main/Tutorial_Jupyter_Notebook.ipynb),
 
 -   [.m
-    file](https://github.com/mathworks/Precipitation-Variability-Analysis-MATLAB/blob/main/Analyzing_and_Visualizing_Open_Precipitation_Data_Script.m)
+    file](https://github.com/mathworks/Precipitation-Variability-Analysis-MATLAB/blob/main/Tutorial_mfile.m)
     and
 
 -   reproducible [capsule on Code Ocean® with DOI](https://codeocean.com/capsule/0990523/tree/v1) 
@@ -61,7 +61,7 @@ Intercomparison Project - Phase 6) database.
     the [Add-Ons
     button](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html)
 
--   Accompanying [**Jupyter notebook** (.ipynb)](https://github.com/mathworks/Precipitation-Variability-Analysis-MATLAB/blob/main/Analyzing_and_Visualizing_Open_Precipitation_Data.ipynb) for use in a Jupyter
+-   Accompanying [**Jupyter notebook** (.ipynb)](https://github.com/mathworks/Precipitation-Variability-Analysis-MATLAB/blob/main/Tutorial_Jupyter_Notebook.ipynb) for use in a Jupyter
     environment. More information on MATLAB kernel
     [here](https://www.mathworks.com/products/reference-architectures/jupyter.html)
 
