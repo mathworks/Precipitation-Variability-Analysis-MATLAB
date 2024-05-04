@@ -3,6 +3,7 @@
 % 
 % _Copyright 2024 - 2024 The MathWorks, Inc._  
 %% Introduction
+%% 
 % *Public Data:* Many public databases have been created for the purposes of 
 % making data freely accessible to the scientific community. A best practice is 
 % to assign a unique identifier to a dataset, so that it is discoverable. A common 
@@ -32,7 +33,7 @@
 % File Exchange> - a portal for community contributions in MATLAB. All community 
 % contributions are covered by open source licenses, which means they can be re-used, 
 % modified or added to. Exact terms and conditions depend on the licenses used 
-% by the author.
+% by the author.  
 %% Data and Resources
 % In this example, we use data covered by permissive license, (i.e., the <https://creativecommons.org/licenses/by/4.0/deed.en 
 % Creative Commons Attribution 4.0 International License> - CC BY 4.0). It is 
@@ -42,7 +43,7 @@
 % changes were made.
 % 
 % We access global climate data from the WCRP CMIP6 (World Climate Research 
-% Programme Coupled Intercomparison Project - Phase 6), which are located at: 
+% Programme Coupled Intercomparison Project - Phase 6), which are located at:  
 % <https://esgf-data.dkrz.de/search/cmip6-dkrz *https://esgf-data.dkrz.de/search/cmip6-dkrz/*.>
 % 
 % The Data Space is hosted by the <https://www.dkrz.de/en German Climate Computer 
@@ -61,16 +62,19 @@
 %% 
 % Make sure to check the box  _"Show all Replicas_".
 % 
-% *Example links* for the data:
+% *Example links* for the data from <https://esgf-dev1.llnl.gov/search ESGF 
+% MetaGrid (llnl.gov)>:
 %% 
-% * data <http://esgf-data04.diasjp.net/thredds/catalog/esgcet/60/CMIP6.HighResMIP.AS-RCEC.HiRAM-SIT-HR.highresSST-present.r1i1p1f1.day.pr.gn.v20210713.html#CMIP6.HighResMIP.AS-RCEC.HiRAM-SIT-HR.highresSST-present.r1i1p1f1.day.pr.gn.v20210713 
-% Link>  (1950 - 2014); e.g., <https://esgf-data04.diasjp.net/thredds/dodsC/esg_dataroot/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-present/r1i1p1f1/day/pr/gn/v20210713/pr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19500101-19501231.nc.html 
-% data 19500101-19501231>
-% * data <https://esgf-data04.diasjp.net/thredds/catalog/esgcet/60/CMIP6.HighResMIP.AS-RCEC.HiRAM-SIT-HR.highresSST-future.r1i1p1f1.day.pr.gn.v20210707.html 
-% Link>  (2015 - 2050); e.g., <https://esgf-data04.diasjp.net/thredds/dodsC/esg_dataroot/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-future/r1i1p1f1/day/pr/gn/v20210707/pr_day_HiRAM-SIT-HR_highresSST-future_r1i1p1f1_gn_20450101-20451231.nc.html 
+% * data <https://esgf-dev1.llnl.gov/search?project=CMIP6&activeFacets=%7B%22institution_id%22%3A%22AS-RCEC%22%2C%22experiment_id%22%3A%22highresSST-present%22%2C%22variant_label%22%3A%22r1i1p1f1%22%2C%22grid_label%22%3A%22gn%22%2C%22frequency%22%3A%22day%22%2C%22variable_id%22%3A%22pr%22%2C%22source_id%22%3A%22HiRAM-SIT-HR%22%7D&textInputs=%5B%22HighResMIP%22%2C%22CMIP6%2FHighResMIP%2FAS-RCEC%2FHiRAM-SIT-HR%2FhighresSST-present%2Fr1i1p1f1%2Fday%2Fpr%2Fgn%2Fv20210713%2Fpr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19530101-19531231.nc%22%5D 
+% Link>  (1950 - 2014); e.g., <https://esgf-data1.llnl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-present/r1i1p1f1/day/pr/gn/v20210713/pr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19530101-19531231.nc.html 
+% data 19530101-19531231>
+% * data <https://esgf-dev1.llnl.gov/search?project=CMIP6&activeFacets=%7B%22institution_id%22:%22AS-RCEC%22,%22experiment_id%22:%22highresSST-future%22,%22variant_label%22:%22r1i1p1f1%22,%22grid_label%22:%22gn%22,%22frequency%22:%22day%22,%22variable_id%22:%22pr%22,%22source_id%22:%22HiRAM-SIT-HR%22%7D&textInputs=%5B%22HighResMIP%22,%22CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-present/r1i1p1f1/day/pr/gn/v20210713/pr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19530101-19531231.nc%22%5D 
+% Link>  (2015 - 2050); e.g., <https://esgf-data1.llnl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-future/r1i1p1f1/day/pr/gn/v20210707/pr_day_HiRAM-SIT-HR_highresSST-future_r1i1p1f1_gn_20450101-20451231.nc.html 
 % data 20450101-20451231>
 %% 
-% |Data Acknowledgement Statement (see| <https://pcmdi.llnl.gov/CMIP6/TermsOfUse/TermsOfUse6-2.html 
+% 
+% 
+% |Data Acknowledgment Statement (see| <https://pcmdi.llnl.gov/CMIP6/TermsOfUse/TermsOfUse6-2.html 
 % |_CMIP6 terms of use_|>|):|
 % 
 % |“We acknowledge the World Climate Research Programme, which, through its 
@@ -102,8 +106,8 @@ clearvars; clc; close all
 % functions that you can use to interact with NetCDF files>.
 
 % read NETCDF data from the web
-  URLpast = "https://esgf-data04.diasjp.net/thredds/dodsC/esg_dataroot/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-present/r1i1p1f1/day/pr/gn/v20210713/pr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19530101-19531231.nc";
-  URLproj = "https://esgf-data04.diasjp.net/thredds/dodsC/esg_dataroot/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-future/r1i1p1f1/day/pr/gn/v20210707/pr_day_HiRAM-SIT-HR_highresSST-future_r1i1p1f1_gn_20450101-20451231.nc";
+  URLpast = "https://esgf-data1.llnl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-present/r1i1p1f1/day/pr/gn/v20210713/pr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19530101-19531231.nc";
+  URLproj = "https://esgf-data1.llnl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-future/r1i1p1f1/day/pr/gn/v20210707/pr_day_HiRAM-SIT-HR_highresSST-future_r1i1p1f1_gn_20450101-20451231.nc";
 
 %% 
 % Read the precipitation flux as "Variable"
