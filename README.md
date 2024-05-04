@@ -91,7 +91,7 @@ is an interface for users to access model data that are distributed in
 several data centers, also called data nodes. Such portals provide
 access to the output of the climate models contributing to the next
 assessment report of the Intergovernmental Panel on Climate
-Change [IPCC](http://www.ipcc.ch/).
+Change [IPCC](http://www.ipcc.ch/). The [ESGF MetaGrid](https://esgf-dev1.llnl.gov/) has the most recent webapp features to support Globus Transfers
 
 **Required Products**
 
