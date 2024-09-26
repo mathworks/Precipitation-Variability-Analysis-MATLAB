@@ -13,7 +13,7 @@ A MATLAB® Live Script with accompanying
     file](https://github.com/mathworks/Precipitation-Variability-Analysis-MATLAB/blob/main/Tutorial_mfile.m)
     and
 
--   reproducible [capsule on Code Ocean® with DOI](https://codeocean.com/capsule/0990523/tree/v1) 
+-   reproducible [capsule on Code Ocean® with DOI](https://codeocean.com/capsule/0990523/tree/v2) 
 
 to access, process and visualize global climate (precipitation) data
 from the WCRP CMIP6 (World Climate Research Programme Coupled
@@ -66,7 +66,7 @@ Intercomparison Project - Phase 6) database.
     environment. More information on MATLAB kernel
     [here](https://www.mathworks.com/products/reference-architectures/jupyter.html)
 
--   Accompanying [**Code Ocean reproducible capsule**](https://codeocean.com/capsule/0990523/tree/v1) for one-click
+-   Accompanying [**Code Ocean reproducible capsule**](https://codeocean.com/capsule/0990523/tree/v2) for one-click
     reproducibility of the code by anyone, including reviewers.
 
 **About the WCRP-CMIP6 Database**
