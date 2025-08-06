@@ -106,8 +106,8 @@ clearvars; clc; close all
 % functions that you can use to interact with NetCDF files>.
 
 % read NETCDF data from the web
-  URLpast = "https://esgf-data1.llnl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-present/r1i1p1f1/day/pr/gn/v20210713/pr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19530101-19531231.nc";
-  URLproj = "https://esgf-data1.llnl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-future/r1i1p1f1/day/pr/gn/v20210707/pr_day_HiRAM-SIT-HR_highresSST-future_r1i1p1f1_gn_20450101-20451231.nc";
+URLpast = "https://esgf-node.ornl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-present/r1i1p1f1/day/pr/gn/v20210713/pr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19530101-19531231.nc";
+URLproj = "https://esgf-node.ornl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-future/r1i1p1f1/day/pr/gn/v20210707/pr_day_HiRAM-SIT-HR_highresSST-future_r1i1p1f1_gn_20430101-20431231.nc";
 
  % In case when the above server is not responding you may use these alternative data links. If so, please uncomment the lines below
 %URLpast = 'https://esgf-data04.diasjp.net/thredds/dodsC/esg_dataroot/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-present/r1i1p1f1/day/pr/gn/v20210713/pr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19530101-19531231.nc';
