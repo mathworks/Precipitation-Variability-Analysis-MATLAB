@@ -105,19 +105,22 @@ clearvars; clc; close all
 % There are a bunch of <https://uk.mathworks.com/help/matlab/network-common-data-form.html 
 % functions that you can use to interact with NetCDF files>.
 
-% read NETCDF data from the web
-URLpast = "https://esgf-node.ornl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-present/r1i1p1f1/day/pr/gn/v20210713/pr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19530101-19531231.nc";
-URLproj = "https://esgf-node.ornl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-future/r1i1p1f1/day/pr/gn/v20210707/pr_day_HiRAM-SIT-HR_highresSST-future_r1i1p1f1_gn_20430101-20431231.nc";
+% [WARNING: some server might occasionally not respond. You can download these data from the ESGF website, or use the following function to deal with that issue!!]
+% Define multiple URLs for past and projected data
+URLs_past = {...
+    "https://esgf-node.ornl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-present/r1i1p1f1/day/pr/gn/v20210713/pr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19530101-19531231.nc", ...
+    "https://esgf-data1.llnl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-present/r1i1p1f1/day/pr/gn/v20210713/pr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19530101-19531231.nc", ...
+    'https://esgf-data04.diasjp.net/thredds/dodsC/esg_dataroot/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-present/r1i1p1f1/day/pr/gn/v20210713/pr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19530101-19531231.nc'};
 
- % In case when the above server is not responding you may use these alternative data links. If so, please uncomment the lines below
-%URLpast = 'https://esgf-data04.diasjp.net/thredds/dodsC/esg_dataroot/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-present/r1i1p1f1/day/pr/gn/v20210713/pr_day_HiRAM-SIT-HR_highresSST-present_r1i1p1f1_gn_19530101-19531231.nc';
-%URLproj = 'https://esgf-data04.diasjp.net/thredds/dodsC/esg_dataroot/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-future/r1i1p1f1/day/pr/gn/v20210707/pr_day_HiRAM-SIT-HR_highresSST-future_r1i1p1f1_gn_20430101-20431231.nc';
-%% 
+URLs_proj = {...
+    "https://esgf-node.ornl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-future/r1i1p1f1/day/pr/gn/v20210707/pr_day_HiRAM-SIT-HR_highresSST-future_r1i1p1f1_gn_20430101-20431231.nc", ...
+    "https://esgf-data1.llnl.gov/thredds/dodsC/css03_data/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-future/r1i1p1f1/day/pr/gn/v20210707/pr_day_HiRAM-SIT-HR_highresSST-future_r1i1p1f1_gn_20430101-20431231.nc", ...
+    'https://esgf-data04.diasjp.net/thredds/dodsC/esg_dataroot/CMIP6/HighResMIP/AS-RCEC/HiRAM-SIT-HR/highresSST-future/r1i1p1f1/day/pr/gn/v20210707/pr_day_HiRAM-SIT-HR_highresSST-future_r1i1p1f1_gn_20430101-20431231.nc'};
+% Use the following function (appended) to select from the available sources (link) the first one that works!
+[URLpast,URLproj] = select_source(URLs_past,URLs_proj)
+
 % Read the precipitation flux as "Variable"
-
-ncdisp(URLpast)
-ncdisp(URLproj)
-Variable = "pr"; 
+Variable = "pr";
 %% Read and filter Geospatial Data
 % read longitude and latitude from the .nc file
 
@@ -383,4 +386,39 @@ end
 % compliance with "Open Science" standards>. Adhering to the above pointers helps 
 % in making your MATLAB code FAIR
 %% 
+% FUNCTIONS
+function [URLpast,URLproj] = select_source(URLs_past,URLs_proj)
+% Initialize variables to store successful URLs
+URLpast = '';
+URLproj = '';
+
+% Check each source for past data
+for i = 1:length(URLs_past)
+    try
+        ncdisp(URLs_past{i});
+        URLpast = URLs_past{i}; % Store the first valid URL
+        break; % Exit loop if successful
+    catch
+        fprintf('Failed to access past data from %s\n', URLs_past{i});
+    end
+end
+
+% Check each source for projected data
+for i = 1:length(URLs_proj)
+    try
+        ncdisp(URLs_proj{i});
+        URLproj = URLs_proj{i}; % Store the first valid URL
+        break; % Exit loop if successful
+    catch
+        fprintf('Failed to access projected data from %s\n', URLs_proj{i});
+    end
+end
+
+if isempty(URLpast) || isempty(URLproj)
+    error('All data sources are unavailable. Please check the URLs.');
+end
+
+
+end
+
 % _Copyright 2024 - 2024 The MathWorks, Inc._
