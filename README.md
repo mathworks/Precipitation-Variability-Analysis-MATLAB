@@ -109,4 +109,11 @@ This code has been developed and tested using MATLAB 2023b
 **Note** This tutorial works best when delivered by a tutor. It is
 important to highlight best practices when working with Open Data,
 publishing Open Code or making research output reproducible.
-> ***You can use [this link to download the data](https://metagrid.esgf-west.org/search?project=CMIP6&activeFacets=%7B%22cf_standard_name%22%3A%22precipitation_flux%22%2C%22frequency%22%3A%22day%22%2C%22source_id%22%3A%22HiRAM-SIT-HR%22%7D) used in this example from the ESGF website***
+> **Note:** ESGF search services occasionally experience downtime. If the MetaGrid link is unavailable, use an alternative ESGF portal such as DKRZ or LLNL and search for:
+>
+> - Project: CMIP6
+> - Source ID: HiRAM-SIT-HR
+> - CF Standard Name: precipitation_flux
+> - Frequency: day
+
+
